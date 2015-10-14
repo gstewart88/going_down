@@ -20,7 +20,7 @@ class Lift
   end
 
   def exit(passenger)
-    passengers.shift passenger unless empty?
+    occupants << passenger unless empty?
   end
 
   def overloaded?
